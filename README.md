@@ -17,7 +17,7 @@ Below is a description of any notes and notable difference from a standard react
 
 react-node-template:
  - client: directory containing React app
- - - public: directory containing public assets
+   - public: directory containing public assets
  - - - index.html: file containing stylesheet references for google icons and font
  - - src: directory containing code for React components
  - - - components: directory containing code for components outside of App
