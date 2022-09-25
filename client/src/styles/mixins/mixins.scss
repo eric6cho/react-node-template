@@ -22,6 +22,37 @@
   }
 }
 
+@mixin defaultStyling() {
+    
+  @include custom-scrollbar();
+  @include themes();
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    @include defaultText(); 
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    height:100%;
+    width: 100%;
+
+    #root{
+      height:100%;
+      width:100%;
+
+      .App{
+        position: relative;
+        height:100%;
+        width:100%;
+      }
+    }
+  }
+}
+
 @mixin defaultText() {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
