@@ -19,9 +19,9 @@ react-node-template:
  - client: directory containing React app
    - public: directory containing public assets
      - index.html: file containing stylesheet references for google icons and font
- - - src: directory containing code for React components
- - - - components: directory containing code for components outside of App
- - - - - comp-sample.js: file containing a sample component template
+   - src: directory containing code for React components
+     - components: directory containing code for components outside of App
+       - comp-sample.js: file containing a sample component template
  - - - scripts: directory containing any utils files
  - - - - utils.js: file containing utility functions that can be exported into components
  - - - styles: directory containing stylesheets for components and general mixins
