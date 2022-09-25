@@ -20,21 +20,18 @@ react-node-template:
    - public: directory containing public assets
      - index.html: file containing stylesheet references for google icons and font
    - src: directory containing code for React components
-     - components: directory containing code for components outside of App
-       - comp-sample.js: file containing a sample component template
- - - - scripts: directory containing any utils files
- - - - - utils.js: file containing utility functions that can be exported into components
- - - - styles: directory containing stylesheets for components and general mixins
- - - - - mixins: directory containing a mixins file
- - - - - - mixins.scss: file containing scss functions and default styling for the app
- - - - - comp-sample.scss: file containing scss for component comp-sample
- - - - - main.scss: file containing global style and calls default functions from mixins.scss
- - - - App.js: file containing the main component of the React app
- - - - SetupProxy.js: file defining a local proxy to the Node.js server.
+     - components: directory containing code for a sample component
+     - scripts: directory containing a utils file
+     - styles: directory containing stylesheets for components and general mixins
+       - mixins: directory containing a mixins file
+         - mixins.scss: file containing scss functions and default styling for the app
+       - comp-sample.scss: file containing scss for the sample component
+       - main.scss: file containing global style and calls default functions from mixins.scss
+     - App.js: file containing the main component of the React app
+     - SetupProxy.js: file defining a local proxy to the Node.js server.
  - server: directory containing the Node.js server
- - - index,js: file that defines the server and the api routes
- - - - scripts: directory containing any utils file
- - - - - utils.js: file containing utility functions that can be exported for server/index.js
+   - index,js: file that defines the server and the api routes
+     - scripts: directory containing a utils file
  - .env.example: example of .env
  - .gitignore: ignores .env and node_modules directory
  - README.md: project description
