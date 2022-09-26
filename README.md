@@ -1,65 +1,89 @@
-# react-node-template
+# React Node.js Project Template
 
-Description:
-Barebones file structure of a Node.js server and React app project.
+A custom made boilerplate code for a React/Node.js project. 
 
-to start node server:
-npm start
+The Node.js server is in the `server` directory, and the React app is in the `client` directory and is based on `npx create-react-app`. 
 
-to start react server:
-cd client 
-npm start
+The general file structure and notable changes are listed below
 
-Notes:
+- `react-node-template`: project home directory
+ - `client`: directory containing React app
+   - `public`: directory containing public/static assets
+     - `index.html`: file containing stylesheet references for google icons and font
+   - `src`: directory containing code for React components
+     - `components`: directory containing code for a sample component
+     - `scripts`: directory containing a utils file
+     - `styles`: directory containing stylesheets for components and general mixins
+       - `mixins`: directory containing a mixins file
+         - `mixins.scss`: file containing scss functions and default styling for the app
+       - `comp-sample.scss`: file containing scss for the sample component
+       - `main.scss`: file containing global style and calls default functions from mixins.scss
+     - `App.js`: file containing the main component of the React app
+     - `SetupProxy.js`: file defining a local proxy to the Node.js server.
+ - `server`: directory containing the Node.js server
+   - `index.js`: file that defines the server and the api routes
+     - `scripts`: directory containing a utils file
+ - `.env.example`: example of .env
+ - `.gitignore`: ignores .env and node_modules directory
+ - `README.md`: project description
+ - `package.lock.json`: created by package.json
+ - `package.json`: contains project info, packages, dependencies, and scripts
+  
+## Available Scripts
 
-File structure notes:
-Below is a description of any notes and notable difference from a standard react/node project.
+All scripts below are run from the project directory.
 
-react-node-template:
- - client: directory containing React app
-   - public: directory containing public assets
-     - index.html: file containing stylesheet references for google icons and font
-   - src: directory containing code for React components
-     - components: directory containing code for a sample component
-     - scripts: directory containing a utils file
-     - styles: directory containing stylesheets for components and general mixins
-       - mixins: directory containing a mixins file
-         - mixins.scss: file containing scss functions and default styling for the app
-       - comp-sample.scss: file containing scss for the sample component
-       - main.scss: file containing global style and calls default functions from mixins.scss
-     - App.js: file containing the main component of the React app
-     - SetupProxy.js: file defining a local proxy to the Node.js server.
- - server: directory containing the Node.js server
-   - index,js: file that defines the server and the api routes
-     - scripts: directory containing a utils file
- - .env.example: example of .env
- - .gitignore: ignores .env and node_modules directory
- - README.md: project description
- - package.lock.json: created by package.json
- - package.json: contains project info, packages, dependencies, and scripts
+### Run the Node.js server
 
-Heroku Deployment:
-As of Sept 2022,
-As long as the Heroku App is connected to the GitHub repository, this configuration can deploy heroku with no extra buildpacks.
-Any configs on prod envs will require configuring key/env variables, as seen in the .env.example file.
+`npm start`
 
-General:
-The template below is created for a project specific readme.
-This is just a general readme to explain the template.
+This will start the Node.js server on port 8888.
 
-# project-title
+### Run the React client app
 
-Description:
+`cd client`
 
+`npm start`
 
-Guide:
-To start node server:
-npm start
+This will start the React client app on port 3000.
 
-To start react server:
-cd client
-npm start
+## IMPORTANT NOTES
 
-Notes:
-Local server is hosted on http://localhost:8888
-Local react app is hosted on http://localhost:3000
+The content above is a readme for the React Node.js Project Template and should be removed when creating a new project.
+The content below is a basic template for the readme created for a new project. Please make any necessary changes to the template below that are reflected in the project, such as:
+- changing scripts
+- changing ports
+- changing environment vars
+- changing hosting services
+- changing deployment process
+
+# New Project Title
+
+New project description text
+  
+## Deployed Application
+
+This application is deployed and hosted on host (change text of 'host' to Heroku/Github Pages/other hosting service) and can be viewed 
+here (attach a link to 'here').
+
+## Available Scripts
+
+All scripts below are run from the project directory.
+
+### Run the Node.js server
+
+`npm start`
+
+This will start the Node.js server on port 8888.
+
+### Run the React client app
+
+`cd client`
+
+`npm start`
+
+This will start the React client app on port 3000.
+
+## Deploying The Project
+
+The deployed project is based on the `main` branch, and a new deployment occurs when updates are pushed onto the `main` branch.
